@@ -1,3 +1,5 @@
+import time 
+
 def find_prime(number):
     n = number
     i = 1
@@ -15,32 +17,33 @@ def find_prime(number):
     return True 
 
 def generate_prime(n):
-    prime_list = []
+   # prime_list = []
     i = 2
-    while len(prime_list) < n:
+    j = 0 
+    if n == 0 : 
+        print(f"cannot generate 0th prime")
+        exit()
+    while j < n:
         is_prime = find_prime(i)
         
         if is_prime: 
-            prime_list.append(i)
+            prime = i 
             i += 1
+            j += 1
         else: 
             i += 1
-    for x in prime_list:
-        print(x)
     
-    return 
-        
 
-# number = input("enter an integer: \n")
-# number = int(number)
-# result = find_prime(number)
-# print(result)
+    return prime
+   
 
-# number = input("enter another integer: \n")
-# number = int(number)
-# generate_prime(number)
+t = time.localtime()
+mins = t.tm_min
+hour = t.tm_hour
+print(f"This program started at {hour}:{mins}\n")
+print(f"The {mins}th prime number is {generate_prime(mins)}")
 
 
-            
+
 
 
