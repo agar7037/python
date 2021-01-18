@@ -16,6 +16,18 @@ while (temp<size):
   printNnumbers(temp)
   temp=temp+1
 
+def addTwo(firstInt, secondInt):
+  x = firstInt + secondInt
+  return x
+
+firstin = input("type a number: \n")
+firstin = int(firstin)
+secondin = input("type another number: \n")
+secondin = int(secondin)
+result = addTwo(firstin, secondin)
+print("your first number was %.2f  \nyour second number was %d\n" %(firstin,secondin))
+print("The result of their sum is {}" .format(result))
+print(f"The result of their sum is {result}")
 # Functions are also useful because:
 # - You can copy functions between programs without changing them, so you 
 # don't have to type up the functions each time

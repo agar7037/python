@@ -26,6 +26,6 @@ print(math.sin(math.pi/6))
 # We can also import other files we write ourselves as libraries. Check out
 # helper.py, and see if you can predict what this code does.
 
-import helper
+from helper import help_me
 
 help_me("now")

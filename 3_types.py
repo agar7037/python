@@ -18,12 +18,17 @@ print(type(p))
 # you may not get the results you want. For example, try these, one line 
 # at a time, by un-commenting them (remove the #):
 
-# print(5 + 5)
-# print("5" + "5")
-# print("5" + 5)
-# print(20 / 5)
-# print(2 / 5)
-# print(2.0 / 5)
+#print(5 + 5)
+#print("5" + "5")
+#print("5" + 5)
+#print(20 / 5)
+#print(2 / 5)
+print(11 // 5)
+x = {2,1}
+
+print(type(x))
+for i in x: 
+    print(i)
 
 # You can also convert between types if necessary.
 
